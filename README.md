@@ -13,5 +13,30 @@ The goal is to demonstrate clean, reusable, framework‑ready code for GET and P
 <li>- Maven</li>
 <li>- GitHub</li>
 </ol>
+<h1>4. Project Structure</h1>
+src/
+ └── test/java/com/muvi/api
+      ├── base/        # Base setup (BaseTest)
+      ├── pojo/        # POJO classes (Product.java)
+      ├── tests/       # Test classes (GetApiTest, PostApiTest)
+      └── utils/       # Payload builders, constants
+<h1>5. Setup Instructions</h1>
+1. Clone the repository:
+   git clone https://github.com/suvendushekharsamal/Suvendu_MUVI_assignment.git
+
+2. Navigate to the project folder:
+   cd Suvendu_MUVI_assignment
+
+3. Run tests using Maven:
+   mvn test
+<h1>6. Execution</h1>
+- Tests are written in TestNG.
+- Reports are generated in `test-output/` after execution.
+- Example:
+  mvn clean test
+<h1>8. Author</h1>
+**Author:** Suvendu Shekhar Samal  
+**Date:** March 2026  
+
 
 
