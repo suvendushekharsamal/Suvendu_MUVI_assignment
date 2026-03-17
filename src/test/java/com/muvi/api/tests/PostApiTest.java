@@ -16,28 +16,6 @@ import static io.restassured.RestAssured.*;
 
 public class PostApiTest extends BaseTest {
 
-//	@Test
-//	public void CreateJSONObjectFromEmployeeClassObject() throws JsonProcessingException {
-//		
-//		PayLoadBuilder payloadBod=new PayLoadBuilder();
-//		Product product=payloadBod.createEmployee("Vivo Mobile", 9999);
-//		System.out.println(product);
-//		ObjectMapper om=new ObjectMapper();
-//		String productJson= om.writerWithDefaultPrettyPrinter().writeValueAsString(product);
-//		//System.out.println(employeeJson);
-//		
-//		RequestSpecification reqs=given();
-//		
-//
-//		reqs.contentType(ContentType.JSON);
-//		reqs.body(productJson);
-//		Response res= reqs.post("/products/add");
-//		
-//		System.out.println(res.prettyPrint());
-//		
-//		
-//		
-//	}
 	@Test
 	public void testCreateProduct() throws JsonProcessingException {
 	    PayLoadBuilder payloadBod = new PayLoadBuilder();
@@ -47,7 +25,7 @@ public class PostApiTest extends BaseTest {
 	            .contentType(ContentType.JSON)
 	            .body(product)
 	            .when()
-	            .post("/products/add")
+	            .post(ApiConstants.POSTS_ENDPOINT)
 	            .then()
 	            .statusCode(201)
 	            .extract().response();
