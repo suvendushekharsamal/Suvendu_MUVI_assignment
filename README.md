@@ -35,7 +35,7 @@ src/
 - Example:
   mvn clean test
 <h1>8. Author</h1>
-**Author:** Suvendu Shekhar Samal  
+**Author:** Suvendu Shekhar Samal  <br>
 **Date:** March 2026  
 
 
