@@ -17,7 +17,7 @@ public class GetApiTest extends BaseTest {
            RestAssured
                 .given()
                 .when()
-                .get(ApiConstants.USERS_ENDPOINT+"/1")
+                .get(ApiConstants.GET_PRODUCT_ENDPOINT+"/1")
                 .then()
                 .statusCode(200)
                 .extract().response();
