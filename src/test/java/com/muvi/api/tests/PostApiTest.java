@@ -25,7 +25,7 @@ public class PostApiTest extends BaseTest {
 	            .contentType(ContentType.JSON)
 	            .body(product)
 	            .when()
-	            .post(ApiConstants.POSTS_ENDPOINT)
+	            .post(ApiConstants.POSTS_PRODUCT_ENDPOINT)
 	            .then()
 	            .statusCode(201)
 	            .extract().response();
