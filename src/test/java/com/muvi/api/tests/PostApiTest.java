@@ -48,6 +48,7 @@ public class PostApiTest extends BaseTest {
 	            .contentType(ContentType.JSON)
 	            .body(product)
 	            .when()
+
 	            .post(ApiConstants.POSTS_PRODUCT_ENDPOINT)
 
 	            .then()
