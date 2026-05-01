@@ -9,6 +9,7 @@ import java.util.Map;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.muvi.api.base.BaseTest;
+import com.muvi.api.utils.ApiConstants;
 
 public class GetApiTest extends BaseTest {
     @Test
@@ -49,6 +50,7 @@ public class GetApiTest extends BaseTest {
         
 
         System.out.println(response.asPrettyString());
+        System.out.println("I love you !!!");
         
         
     }
