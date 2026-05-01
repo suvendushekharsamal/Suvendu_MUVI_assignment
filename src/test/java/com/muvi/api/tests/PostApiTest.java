@@ -48,7 +48,11 @@ public class PostApiTest extends BaseTest {
 	            .contentType(ContentType.JSON)
 	            .body(product)
 	            .when()
+<<<<<<< HEAD
 	            .post(ApiConstants.POSTS_PRODUCT_ENDPOINT)
+=======
+	            .post(ApiConstants.POSTS_ENDPOINT)
+>>>>>>> 283ea63 (Your commit message)
 	            .then()
 	            .statusCode(201)
 	            .extract().response();
